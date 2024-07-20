@@ -100,11 +100,20 @@ const HomePage = () => {
     }
   };
 
+  const handleRestProject = () => {
+    setProjects([]);
+    if (typeof window !== "undefined") {
+      localStorage.clear();
+      alert("LocalStorage has been reset.");
+    }
+  };
+
   return (
     <Container>
       <Title>All Projects</Title>
       <div style={{ textAlign: "center", marginBottom: "1rem" }}>
         <Button onClick={addProject}>Add Project</Button>
+        <Button onClick={handleRestProject}>Reset all Project</Button>
       </div>
       {projects.length === 0 ? (
         <div style={{ textAlign: "center", marginBottom: "1rem" }}>

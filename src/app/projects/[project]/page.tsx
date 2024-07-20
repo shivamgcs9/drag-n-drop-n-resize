@@ -34,6 +34,7 @@ const CanvasComponent: React.FC<{ project: string }> = ({ project }) => {
           <DraggableItem id="new-item" type="ITEM">
             <div className={styles.draggableItem}>Drag me</div>
           </DraggableItem>
+          <span>Drag this Element into the canvas</span>
         </div>
         <DropContainer onDrop={handleDrop}>
           <div className={styles.dropContainer}>

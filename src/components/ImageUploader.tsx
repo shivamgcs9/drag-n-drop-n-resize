@@ -23,7 +23,7 @@ const ImageUploader: React.FC<ImageUploaderProps> = ({ id, onUpload }) => {
 
   return (
     <>
-      <label htmlFor={`img-${id}`}>Image</label>
+      <label htmlFor={`img-${id}`}>Click to Add image</label>
       <input
         type="file"
         id={`img-${id}`}
